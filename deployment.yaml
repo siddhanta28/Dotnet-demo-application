@@ -1,7 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dotnet-demo-deployment
+  name: dotnet-demo
+  labels:
+    app: dotnet-demo
 spec:
   replicas: 1
   selector:
@@ -16,5 +18,5 @@ spec:
         - name: dotnet-demo
           image: siddhanta28/dotnet-demo-application:latest
           ports:
-            - containerPort: 80
+            - containerPort: 5051
 
