@@ -18,5 +18,5 @@ spec:
         - name: dotnet-demo
           image: siddhanta28/dotnet-app:latest
           ports:
-            - containerPort: 5051
+            - containerPort: 80
 
