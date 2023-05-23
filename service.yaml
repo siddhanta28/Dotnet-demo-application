@@ -7,7 +7,7 @@ spec:
     app: dotnet-demo
   ports:
     - protocol: TCP
-      port: 80
+      port: 5051
       targetPort: 5051
-  type: LoadBalancer
+  type: NodePort
 
